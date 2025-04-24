@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Hoş geldiniz, {{ session['username'] }}</h2>
+    <p>Excel dosyasını indirmek için aşağıya tıklayın:</p>
+
+    <form method="get" action="{{ url_for('download_excel') }}">
+        <button type="submit">Excel İndir</button>
+    </form>
+</body>
+</html>
